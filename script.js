@@ -1,5 +1,15 @@
 // NOIR ÉTOILE — small interactions (tabs, smooth scroll, modal, toast)
 
+(function showTableFromUrl(){
+  const params = new URLSearchParams(window.location.search);
+  const t = params.get("table");
+  const badge = document.getElementById("tableBadge");
+  if (t && badge){
+    badge.style.display = "inline-flex";
+    badge.textContent = `Masa ${t}`;
+  }
+})();
+
 const $ = (q, el = document) => el.querySelector(q);
 const $$ = (q, el = document) => Array.from(el.querySelectorAll(q));
 
@@ -205,4 +215,12 @@ fakeSubmit?.addEventListener("click", () => {
     window.__toastTimer = setTimeout(() => (t.style.opacity = "0"), 1600);
   }
 })();
+
+function getMenuUrlWithTable() {
+  const base = window.location.origin + window.location.pathname; // hash yok
+  const sel = document.getElementById("tableNo");
+  const table = sel ? sel.value : "";
+  return table ? `${base}?table=${encodeURIComponent(table)}` : base;
+}
+const url = getMenuUrlWithTable();
 

@@ -7,6 +7,9 @@
 
     <title>NOIR ÉTOILE-Fine Dining Menu</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta name="google-site-verification" content="ABC123XYZ..." />
+
 </head>
 <body>
     <div class="bg-ambient" aria-hidden="true">
@@ -16,6 +19,8 @@
     </div>
 
     <header class="topbar">
+        <div class="table-badge" id="tableBadge" style="display:none;"></div>
+
         <a class="brand" href="#top" aria-label="Ana-Sayfa">
             <span class="brand-mark" aria-hidden="true">✦</span>
             <span class="brand-text">
@@ -435,8 +440,27 @@
             Kameranızla okutun ve menüyü açın.
         </p>
 
+        <div class="field">
+  <label for="tableNo">Masa No</label>
+  <select id="tableNo">
+    <option value="1">Masa 1</option>
+    <option value="2">Masa 2</option>
+    <option value="3">Masa 3</option>
+    <option value="4">Masa 4</option>
+    <option value="5">Masa 5</option>
+    <option value="6">Masa 6</option>
+    <option value="7">Masa 7</option>
+    <option value="8">Masa 8</option>
+    <option value="9">Masa 9</option>
+    <option value="10">Masa 10</option>
+    <option value="11">Masa 11</option>
+    <option value="12">Masa 12</option>
+  </select>
+</div>
+
+
         <div class="qr-wrap">
-            <div id="box" class="qr-box" aria-label="QR Code"></div>
+            <div id="qrBox" class="qr-Box" aria-label="QR Code"></div>
 
             <div class="qr-info">
                 <div class="qr-row">
