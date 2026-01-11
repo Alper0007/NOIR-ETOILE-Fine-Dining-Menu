@@ -322,7 +322,7 @@
       </div>
     </section>
 
-    <!-- Reservation -->
+    
     <section id="reservation" class="section">
       <div class="section-head">
         <h2 class="section-title">Reservation</h2>
@@ -409,8 +409,7 @@
         <button class="icon-btn" type="button" data-close="true" aria-label="Kapat">✕</button>
       </div>
       <p class="modal-text">
-        Bu demo menü tasarımında rezervasyon ekranı örnek olarak yer alıyor.
-        Gerçekte bir backend ile bağlanır.
+        Rezervasyon oluşturmak için form kısmında kişisel bilgilerinizi doldurarak rezervasyon talebi formu oluşturabilirsiniz.
       </p>
       <div class="modal-actions">
         <button class="btn btn-primary" type="button" data-scroll="#reservation" data-close="true">
@@ -421,7 +420,40 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  
+
+  <div class="modal" id="qrModal" aria-hidden="true">
+    <div class="modal-backdrop" data-qr-close="true"></div>
+
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+        <div class="modal-head">
+            <h3 id="qrTitle">QR Menü</h3>
+            <button class="icon-btn" type="button" data-qr-close="true" aria-label="Kapat">✕</button>
+        </div>
+
+        <p class="modal-text">
+            Kameranızla okutun ve menüyü açın.
+        </p>
+
+        <div class="qr-wrap">
+            <div id="box" class="qr-box" aria-label="QR Code"></div>
+
+            <div class="qr-info">
+                <div class="qr-row">
+                    <span class="k">Link</span>
+                    <span class="v" id="qrLinkText">—</span>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-ghost" type="button" id="copyQrLink">Kopyala</button>
+                    <button class="btn btn-primary" type="button" id="openQrLink">Aç</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+
     
     
 </body>
