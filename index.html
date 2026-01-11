@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NOIR ÉTOILE-Fine Dining Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-ambient" aria-hidden="true">
+        <div class="grain"></div>
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+    </div>
+
+    <header class="topbar">
+        <a class="brand" href="#top" aria-label="Ana-Sayfa">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span class="brand-text">
+                <span class="brand-name">NOIR ÉTOILE</span>
+                <span class="brand-sub">Modern Fine Dining</span>
+            </span>
+        </a>
+
+        <nav class="nav">
+            <a href="#experience">Deneyim</a>
+            <a href="#starters">Başlangıç</a>
+            <a href="#mains">Ana</a>
+            <a href="#desserts">Tatlı</a>
+            <a href="#wine">Şarap</a>
+        </nav>
+
+        <button class="btn btn-ghost" id="openReservation" type="button">Rezervasyon</button>
+        
+    </header>
+
+    <main id="top" class="page">
+        <section class="hero">
+            <div class="hero-card">
+                <p class="eyebrow">Gastronomic Atelier • İzmir</p>
+                <h1 class="title">
+                    Sessiz lüks.</b>
+                    <span class="title-acent">Net Lezzet.</span>
+                </h1>
+                <p class="lead">
+                    Mevsimsel ürünler, minimal tabaklar ve kusursuz servis.
+          Menü; az ama öz, her detay bilinçli.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#experience">
+                        Menüyü İncele
+                    </a>
+
+                    <a class="btn btn-outline" href="#wine">
+                        Wine Pairing
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <div class="meta">
+                        <span class="meta-k">Dress Code</span>
+                        <span class="meta-v">Elegant</span>
+                    </div>
+                    <div class="meta">
+                        <span class="meta-k">Serivce</span>
+                        <span class="meta-v">18:00 - 23:00</span>
+                    </div>
+                    <div class="meta">
+                        <span class="meta-k">Chef</span>
+                        <span class="meta-v">Signature Menu</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-plate" aria-hidden="true">
+                <div class="plate-ring"></div>
+                <div class="plate-ring ring-2"></div>
+                <div class="plate-center"></div>
+                <div class="plate-spark spark-1"></div>
+                <div class="plate-spark spark-2"></div>
+                <div class="plate-spark spark-3"></div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+      <div class="section-head">
+        <h2 class="section-title">Tasting Experience</h2>
+        <p class="section-note">Şefin imza yolculuğu. Az açıklama, yüksek özgüven.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card featured">
+          <div class="card-top">
+            <span class="tag">Chef’s Signature</span>
+            <span class="price">₺3.950</span>
+          </div>
+          <h3 class="card-title">Noir Dégustation</h3>
+          <p class="card-desc">
+            7 aşamalı imza menü — mevsimsel, hafif, dengeli.
+            Her tabak kısa bir hikâye ile sunulur.
+          </p>
+
+          <ul class="bullets">
+            <li>Amuse-bouche + 5 tabak + final tatlı</li>
+            <li>Mevsime göre değişken içerik</li>
+            <li>Servis süresi ~ 120 dk</li>
+          </ul>
+
+          <div class="card-actions">
+            <button class="btn btn-primary" type="button" data-scroll="#reservation">
+              Masanı Ayır
+            </button>
+            <button class="btn btn-ghost" type="button" id="openPairing">
+              Pairing Ekle
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag subtle">Optional</span>
+            <span class="price">₺1.750</span>
+          </div>
+          <h3 class="card-title">Wine Pairing</h3>
+          <p class="card-desc">
+            4 kadeh eşleşme — tabaklarla uyumlu asidite ve gövde.
+            Şarap listesi ayrı cilt olarak sunulur.
+          </p>
+
+          <div class="pairing-list">
+            <div class="pair">
+              <span class="pair-name">Champagne Brut Grand Cru</span>
+              <span class="pair-note">istiridye / amuse</span>
+            </div>
+            <div class="pair">
+              <span class="pair-name">Chablis Premier Cru</span>
+              <span class="pair-note">balık / rezene</span>
+            </div>
+            <div class="pair">
+              <span class="pair-name">Bourgogne Pinot Noir</span>
+              <span class="pair-note">tartare / trüf</span>
+            </div>
+            <div class="pair">
+              <span class="pair-name">Barolo Riserva</span>
+              <span class="pair-note">dry-aged / kemik iliği</span>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn btn-outline" href="#wine">Şarap Sayfası</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Menu tabs -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">À la Carte</h2>
+        <p class="section-note">Minimal, temiz, net. Ürün konuşur.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menü kategorileri">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="starters">Başlangıç</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="mains">Ana</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="desserts">Tatlı</button>
+      </div>
+
+      <!-- Starters -->
+      <div id="starters" class="menu-panel is-active" data-panel="starters" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Oyster Élégance</h3>
+              <span class="dots"></span>
+              <span class="p">₺690</span>
+            </div>
+            <p>Gillardeau istiridye, şampanya köpüğü, limon kaviarı.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Beef Tartare Royale</h3>
+              <span class="dots"></span>
+              <span class="p">₺820</span>
+            </div>
+            <p>El doğranmış dana, siyah trüf, bıldırcın yumurtası, Dijon.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Burrata Affumicata</h3>
+              <span class="dots"></span>
+              <span class="p">₺590</span>
+            </div>
+            <p>Tütsülenmiş burrata, beyaz şeftali, fesleğen yağı.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Seasonal Garden</h3>
+              <span class="dots"></span>
+              <span class="p">₺520</span>
+            </div>
+            <p>Mevsim yeşillikleri, narenciye, badem kırığı. <span class="v">(V)</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div id="mains" class="menu-panel" data-panel="mains" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Dry-Aged Ribeye (45 Days)</h3>
+              <span class="dots"></span>
+              <span class="p">₺1.650</span>
+            </div>
+            <p>Kömür ateşi, kemik iliği emülsiyonu, siyah sarımsak.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Seabass en Papillote</h3>
+              <span class="dots"></span>
+              <span class="p">₺1.250</span>
+            </div>
+            <p>Deniz levreği, rezene, safran sosu.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Wild Mushroom Risotto</h3>
+              <span class="dots"></span>
+              <span class="p">₺980</span>
+            </div>
+            <p>Porcini, morel, parmesan köpüğü. <span class="v">(V)</span></p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Confit Duck</h3>
+              <span class="dots"></span>
+              <span class="p">₺1.350</span>
+            </div>
+            <p>Ördek konfi, kiraz demi-glace, kök sebzeler.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div id="desserts" class="menu-panel" data-panel="desserts" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Valrhona 70%</h3>
+              <span class="dots"></span>
+              <span class="p">₺520</span>
+            </div>
+            <p>Bitter çikolata, tonka, altın yaprak dokunuşu.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Crème Brûlée Vanille</h3>
+              <span class="dots"></span>
+              <span class="p">₺460</span>
+            </div>
+            <p>Madagaskar vanilyası, ince karamel kabuk.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Cheese Selection</h3>
+              <span class="dots"></span>
+              <span class="p">₺690</span>
+            </div>
+            <p>Fransız peynirleri, incir reçeli, brioche.</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-line">
+              <h3>Seasonal Sorbet</h3>
+              <span class="dots"></span>
+              <span class="p">₺380</span>
+            </div>
+            <p>Günün meyvesi, narenciye kabuğu, nane.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wine -->
+    <section id="wine" class="section">
+      <div class="section-head">
+        <h2 class="section-title">Wine & Cellar</h2>
+        <p class="section-note">Kısa liste — yüksek kalite. Detaylı liste ayrı cilt.</p>
+      </div>
+
+      <div class="grid three">
+        <article class="mini-card">
+          <p class="mini-top">Sparkling</p>
+          <h3>Champagne Brut</h3>
+          <p class="mini-desc">Kuru, canlı asidite, deniz ürünleriyle kusursuz.</p>
+        </article>
+
+        <article class="mini-card">
+          <p class="mini-top">White</p>
+          <h3>Chablis 1er Cru</h3>
+          <p class="mini-desc">Mineral yapı, rezene ve balıkla net uyum.</p>
+        </article>
+
+        <article class="mini-card">
+          <p class="mini-top">Red</p>
+          <h3>Barolo Riserva</h3>
+          <p class="mini-desc">Gövde, tanen, et tabaklarında “final dokunuş”.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="section">
+      <div class="section-head">
+        <h2 class="section-title">Reservation</h2>
+        <p class="section-note">Bu bir tasarım örneği. Form sadece görsel amaçlı.</p>
+      </div>
+
+      <div class="grid two">
+        <form class="card form" onsubmit="return false;">
+          <div class="field">
+            <label for="n">Ad Soyad</label>
+            <input id="n" type="text" placeholder="Örn: Alper Özgür" />
+          </div>
+
+          <div class="field">
+            <label for="p">Telefon</label>
+            <input id="p" type="tel" placeholder="05xx xxx xx xx" />
+          </div>
+
+          <div class="field">
+            <label for="d">Tarih</label>
+            <input id="d" type="date" />
+          </div>
+
+          <div class="field">
+            <label for="t">Saat</label>
+            <input id="t" type="time" />
+          </div>
+
+          <div class="field full">
+            <label for="m">Not</label>
+            <textarea id="m" rows="4" placeholder="Alerji, özel istek, kutlama..."></textarea>
+          </div>
+
+          <button class="btn btn-primary full" type="button" id="fakeSubmit">
+            Talep Oluştur
+          </button>
+        </form>
+
+        <aside class="card info">
+          <h3 class="card-title">Salon Bilgisi</h3>
+          <p class="card-desc">
+            Konsept: modern fine dining • servis: sessiz, hızlı, özenli.
+            Menüde mevsime göre küçük değişiklikler olabilir.
+          </p>
+
+          <div class="info-list">
+            <div class="info-row">
+              <span class="k">Adres</span>
+              <span class="v">İzmir / Konsept Lokasyon</span>
+            </div>
+            <div class="info-row">
+              <span class="k">Saat</span>
+              <span class="v">18:00 — 23:30</span>
+            </div>
+            <div class="info-row">
+              <span class="k">İletişim</span>
+              <span class="v">+90 (000) 000 00 00</span>
+            </div>
+          </div>
+
+          <div class="note-box">
+            <span class="note-dot" aria-hidden="true"></span>
+            <p>
+              * Tasarım “premium” görünüm için düşük doygunluk ve ince altın vurgular kullanır.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="foot-brand">NOIR ÉTOILE</p>
+        <p class="foot-note">© 2026 — Fine Dining Menu Design</p>
+      </div>
+    </footer>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h3 id="modalTitle">Rezervasyon</h3>
+        <button class="icon-btn" type="button" data-close="true" aria-label="Kapat">✕</button>
+      </div>
+      <p class="modal-text">
+        Bu demo menü tasarımında rezervasyon ekranı örnek olarak yer alıyor.
+        Gerçekte bir backend ile bağlanır.
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" type="button" data-scroll="#reservation" data-close="true">
+          Forma Git
+        </button>
+        <button class="btn btn-ghost" type="button" data-close="true">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+    
+</body>
+</html>
